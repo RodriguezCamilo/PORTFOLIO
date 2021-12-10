@@ -1,6 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 
+:root {
+  --bgGradiant: linear-gradient(185deg, #2400B4, #0053EE, #007FFF, #00A3FF, #00C4E2, #00E3B9);
+}
+
+body {
+  background-image: var(--bgGradiant);
+}
+
+.title {
+  font-size: clamp(2rem, 60px, 5rem);
+  font-weight: bold;
+}
+
+#home, #about, #skills, #contact, #portfolio {
+  height: 100vh;
+}
+
+.titleLeft {
+  margin: 20vh 0 0 15vw;
+}
+
+.titleRight {
+  margin: 20vh 0 0 65vw;
+}
+
+header {
+  position: fixed;
+  left: 70%;
+  top: 7%;
+}
+header div {
+  display: inline-block;
+  margin: 0 20px;
+}
+header div a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.box {
+  color: #1E1926;
+  display: inline-block;
+  box-shadow: -10px 10px 5px black;
+  background-image: linear-gradient(to top right, #0053EE, #007FFF, #00A3FF, #00C4E2, #00E3B9);
+  background-size: 400%;
+  padding: 80px 40px 0 5px;
+  animation: bgAnimation 5s infinite alternate;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.resume {
+  border: 0;
+  padding: 0.5em 1.5em;
+  font-size: 1.5rem;
+  display: block;
+  margin: 50px 0 0 0;
+  font-weight: 500;
+  background-image: linear-gradient(to right, #007FFF, #00A3FF, #E4A3FF, #FEF6FF);
+  background-size: 400%;
+  background-position: left;
+  transition: 0.5s;
+  box-shadow: -10px 10px 5px black;
+}
+
+.resume:hover, .resume:focus {
+  background-position: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

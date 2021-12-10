@@ -1,0 +1,38 @@
+.box {
+        color: #1E1926;
+        display: inline-block;
+        box-shadow: -10px 10px 5px black;
+        background-image: linear-gradient(to top right, #0053EE, #007FFF, #00A3FF, #00C4E2, #00E3B9);
+        background-size: 400%;
+        padding: 80px 40px 0 5px;
+        animation: bgAnimation 5s infinite alternate;
+}
+
+@keyframes bgAnimation{
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.resume {
+    border: 0;
+    padding: .5em 1.5em;
+    font-size: 1.5rem;
+    display: block;
+    margin: 50px 0 0 0;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #007FFF, #00A3FF, #E4A3FF, #FEF6FF);
+    background-size: 400%;
+    background-position: left;
+    transition: 0.5s;
+    
+    box-shadow: -10px 10px 5px black;
+}
+
+.resume:hover, .resume:focus{
+    background-position: right;
+}
